@@ -5,42 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>iOS Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="background">
+        <h1>iOS Calculator</h1>
         <div class="calculator">
-            <h1>Calculator</h1>
-            <p id="result"></p>
+            <p id="result" aria-placeholder="0"></p>
             <table>
                 <tr>
-                    <td><button onclick="clean()">C</button></td>
-                    <td><button onclick="turnBack()">&lt</button></td>
-                    <td><button onclick="insert('/')">/</button></td>
-                    <td><button onclick="insert('*')">X</button></td>
+                    <td><button id="cleanAll" onclick="clean()">AC</button></td>
+                    <td><button id="turnBack" onclick="turnBack()">&lt</button></td>
+                    <td><button id="division" onclick="insert('/')">/</button></td>
+                    <td><button id="xis" onclick="insert('*')">X</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="insert('7')">7</button></td>
                     <td><button onclick="insert('8')">8</button></td>
                     <td><button onclick="insert('9')">9</button></td>
-                    <td><button onclick="insert('-')">-</button></td>
+                    <td><button id="menos" onclick="insert('-')">-</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="insert('4')">4</button></td>
                     <td><button onclick="insert('5')">5</button></td>
                     <td><button onclick="insert('6')">6</button></td>
-                    <td><button onclick="insert('+')">+</button></td>
+                    <td><button id="mais" onclick="insert('+')">+</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="insert('1')">1</button></td>
                     <td><button onclick="insert('2')">2</button></td>
                     <td><button onclick="insert('3')">3</button></td>
-                    <td rowspan="2"><button style="height: 108px;" onclick="calculate()">=</button></td>
+                    <td rowspan="2"><button id="igual" style="height: 108px;" onclick="calculate()">=</button></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button style="width: 108px;" onclick="insert('0')">0</button></td>
+                    <td colspan="2"><button id="zero" style="width: 108px;" onclick="insert('0')">0</button></td>
                     <td><button onclick="insert('.')">.</button></td>
                 </tr>
             </table>

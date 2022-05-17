@@ -1,2 +1,2 @@
-# Tenha acesso a calculadora atráves do link abaixo:
-https://ddotg0mes.github.io/iOSCalculator/
+# iOS Scientific Calculator
+https://ddotg0mes.github.io/project-iOS-Scientific-Calculator
